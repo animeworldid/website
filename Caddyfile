@@ -1,0 +1,4 @@
+localhost
+
+root * /app/build
+file_server
