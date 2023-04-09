@@ -4,7 +4,7 @@
 
 # @animeworldid/website
 
-**A GitHub action for updating Anime World Indonesia membership list continuously**
+**Anime World Indonesia website made with Svelte**
 
 [![GitHub](https://img.shields.io/github/license/animeworldid/website)](https://github.com/animeworldid/website/blob/main/LICENSE)
 [![GitHub version](https://badge.fury.io/gh/animeworldid%2Fwebsite.svg)](https://badge.fury.io/gh/animeworldid%2Fwebsite)
