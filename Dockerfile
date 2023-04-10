@@ -31,7 +31,7 @@ WORKDIR /app
 
 # Copy needed files
 COPY --from=build-stage /tmp/build/build ./build
-COPY ./Caddyfile ./Caddyfile
+COPY ./.github/docker/Caddyfile ./Caddyfile
 
 # Additional Environment Variables
 ENV NODE_ENV production

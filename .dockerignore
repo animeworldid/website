@@ -1,12 +1,17 @@
-.git
-node_modules
+README.md
+
+# Tools
 .eslint*
 .prettier*
-.git*
 .vscode
-README.md
-Dockerfile*
-docker-compose.yml
+
+# Svelte
 public
 .svelte-kit
 build
+
+# Git Files
+.gitattributes
+.git
+.github
+!.github/docker/Caddyfile
