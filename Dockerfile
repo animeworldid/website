@@ -27,6 +27,8 @@ FROM caddy:2-alpine
 LABEL name "website"
 LABEL maintainer "Anime World Indonesia <dev@animeworld.moe>"
 
+WORKDIR /app
+
 # Copy needed files
 COPY --from=build-stage /tmp/build/package.json .
 COPY --from=build-stage /tmp/build/node_modules ./node_modules
