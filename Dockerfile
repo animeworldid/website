@@ -30,7 +30,7 @@ LABEL maintainer "Anime World Indonesia <dev@animeworld.moe>"
 WORKDIR /app
 
 # Copy needed files
-COPY --from=build-stage /tmp/build/build ./
+COPY --from=build-stage /tmp/build/build ./build
 COPY ./Caddyfile ./Caddyfile
 
 # Additional Environment Variables
