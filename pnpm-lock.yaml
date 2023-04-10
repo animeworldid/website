@@ -1,9 +1,18 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@fortawesome/free-brands-svg-icons':
+    specifier: ^6.4.0
+    version: 6.4.0
+  '@fortawesome/free-solid-svg-icons':
+    specifier: ^6.4.0
+    version: 6.4.0
   '@sveltejs/adapter-static':
     specifier: ^2.0.1
     version: 2.0.1(@sveltejs/kit@1.5.0)
+  svelte-fa:
+    specifier: ^3.0.3
+    version: 3.0.3
 
 devDependencies:
   '@fontsource/fira-mono':
@@ -265,6 +274,28 @@ packages:
   /@fontsource/fira-mono@4.5.10:
     resolution: {integrity: sha512-bxUnRP8xptGRo8YXeY073DSpfK74XpSb0ZyRNpHV9WvLnJ7TwPOjZll8hTMin7zLC6iOp59pDZ8EQDj1gzgAQQ==}
     dev: true
+
+  /@fortawesome/fontawesome-common-types@6.4.0:
+    resolution: {integrity: sha512-HNii132xfomg5QVZw0HwXXpN22s7VBHQBv9CeOu9tfJnhsWQNd2lmTNi8CSrnw5B+5YOmzu1UoPAyxaXsJ6RgQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
+  /@fortawesome/free-brands-svg-icons@6.4.0:
+    resolution: {integrity: sha512-qvxTCo0FQ5k2N+VCXb/PZQ+QMhqRVM4OORiO6MXdG6bKolIojGU/srQ1ptvKk0JTbRgaJOfL2qMqGvBEZG7Z6g==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.4.0
+    dev: false
+
+  /@fortawesome/free-solid-svg-icons@6.4.0:
+    resolution: {integrity: sha512-kutPeRGWm8V5dltFP1zGjQOEAzaLZj4StdQhWVZnfGFCvAPVvHh8qk5bRrU4KXnRRRNni5tKQI9PBAdI6MP8nQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.4.0
+    dev: false
 
   /@humanwhocodes/config-array@0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
@@ -1778,6 +1809,10 @@ packages:
       - stylus
       - sugarss
     dev: true
+
+  /svelte-fa@3.0.3:
+    resolution: {integrity: sha512-GIikJjcVCD+5Y/x9hZc2R4gvuA0gVftacuWu1a+zVQWSFjFYZ+hhU825x+QNs2slsppfrgmFiUyU9Sz9gj4Rdw==}
+    dev: false
 
   /svelte-hmr@0.15.1(svelte@3.54.0):
     resolution: {integrity: sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==}
