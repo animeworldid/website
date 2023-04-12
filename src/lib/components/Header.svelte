@@ -6,7 +6,7 @@
 </script>
 
 <header>
-  <div class="fixed z-50 w-full flex-wrap items-center {$isScrolled ? 'bg-blue-600' : 'bg-blue-600'}">
+  <div class="fixed z-50 w-full flex-wrap items-center transition duration-700 {$isScrolled ? 'bg-blue-600' : 'bg-transparent'}">
     <nav class="mx-auto w-full max-w-screen-xl p-6 py-4 lg:py-8">
       <div class="flex items-stretch justify-between">
         <div class="flex flex-grow w-fit items-center">

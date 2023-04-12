@@ -4,7 +4,7 @@
 </script>
 
 <footer class="bg-blue-600 mt-16">
-  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+  <div class="container max-w-6xl mx-auto p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
       <div class="flex flex-col mb-6 md:mb-0">
         <a href="/" class="flex items-center">
