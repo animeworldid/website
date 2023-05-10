@@ -16,8 +16,8 @@
           </a>
           <ul class="hidden md:flex gap-4 lg:gap-12 mx-4 text-white uppercase">
             <li><a class="border-b-2 border-transparent hover:border-white transition-colors" href="/">Home</a></li>
-            <li><a class="border-b-2 border-transparent hover:border-white transition-colors" href="/staff">Staff</a></li>
             <li><a class="border-b-2 border-transparent hover:border-white transition-colors" href="/">Discover</a></li>
+            <li><a class="border-b-2 border-transparent hover:border-white transition-colors" href="/staff">Staff</a></li>
             <li>
               <a class="border-b-2 border-transparent hover:border-white transition-colors flex items-center" href="/membership">
                 <Fa class="pr-2" icon={faCrown} /> Membership
@@ -26,7 +26,7 @@
           </ul>
         </div>
         <div class="hidden sm:flex gap-4 min-w-[250px] py-2">
-          <a class="basis-1/2" href="/" rel="noreferrer">
+          <a class="basis-1/2" href="/redirect/discord" rel="noreferrer">
             <Button backgroundColor="bg-transparent" textColor="text-white" className="border-white box-border border-2">Join Discord</Button>
           </a>
           <a class="basis-1/2" href="/" rel="noreferrer">
