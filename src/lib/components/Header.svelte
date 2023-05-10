@@ -16,8 +16,8 @@
           </a>
           <ul class="hidden md:flex gap-4 lg:gap-12 mx-4 text-white uppercase">
             <li><a class="border-b-2 border-transparent hover:border-white transition-colors" href="/">Home</a></li>
-            <li><a class="border-b-2 border-transparent hover:border-white transition-colors" href="/staff">Staff</a></li>
             <li><a class="border-b-2 border-transparent hover:border-white transition-colors" href="/">Discover</a></li>
+            <li><a class="border-b-2 border-transparent hover:border-white transition-colors" href="/staff">Staff</a></li>
             <li>
               <a class="border-b-2 border-transparent hover:border-white transition-colors flex items-center" href="/membership">
                 <Fa class="pr-2" icon={faCrown} /> Membership
