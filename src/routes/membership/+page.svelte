@@ -10,18 +10,18 @@
   })
 </script>
 
-<div class="bg-blue-600 pt-16 sm:py-24 lg:py-32 text-white text-center">
-  <div class="h-[3rem]"></div>
+<div class="bg-blue-600 pt-16 sm:pt-24 lg:pt-32 text-white text-center flex flex-col justify-between items-center">
+  <div class="h-[2rem]"></div>
   <h1 class="uppercase font-bold text-4xl">Supporter</h1>
   <h2 class="text-xl mt-2 font-light">Meet supporters of Anime World Indonesia</h2>
-  <div class="h-[1.5rem]"></div>
+  <div class="h-[4rem]"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-full" viewBox="0 0 1440 95" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 94.389C893 -31.463 550 -31.463 0 94.389V95H1440V94.389Z" fill="#F9F9F9"/>
+  </svg>
 </div>
 
-<svg xmlns="http://www.w3.org/2000/svg" class="w-full relative -inset-y-[6.2rem]" viewBox="0 0 1440 95" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 94.389C893 -31.463 550 -31.463 0 94.389V95H1440V94.389Z" fill="#F9F9F9"/>
-</svg>
-
-<div class="relative -inset-y-10 container max-w-6xl px-3 lg:px-0 md:mx-auto">
+<br>
+<div class="container max-w-6xl px-3 lg:px-0 md:mx-auto">
   <section>
     {#if membershipData === undefined}
       <Loader className=""/>
