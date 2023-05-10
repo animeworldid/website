@@ -34,6 +34,9 @@
             <li>
               <a href="/membership" class="hover:underline">Membership</a>
             </li>
+            <li>
+              <a href="/redirect/discord" class="hover:underline">Join Discord</a>
+            </li>
           </ul>
         </div>
         <div>

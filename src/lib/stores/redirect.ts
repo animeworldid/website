@@ -34,5 +34,9 @@ export const links = [
   {
     dest: 'https://tiktok.com/@animeworld_id',
     name: 'tiktok'
+  },
+  {
+    dest: 'https://discord.gg/eJFepUyPPM',
+    name: 'discord'
   }
 ]

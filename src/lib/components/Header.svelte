@@ -26,7 +26,7 @@
           </ul>
         </div>
         <div class="hidden sm:flex gap-4 min-w-[250px] py-2">
-          <a class="basis-1/2" href="/" rel="noreferrer">
+          <a class="basis-1/2" href="/redirect/discord" rel="noreferrer">
             <Button backgroundColor="bg-transparent" textColor="text-white" className="border-white box-border border-2">Join Discord</Button>
           </a>
           <a class="basis-1/2" href="/" rel="noreferrer">
