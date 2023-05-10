@@ -12,8 +12,8 @@
 
 <div class="bg-blue-600 pt-16 sm:py-24 lg:py-32 text-white text-center">
   <div class="h-[3rem]"></div>
-  <h1 class="uppercase font-bold text-4xl">Supporter</h1>
-  <h2 class="text-xl mt-2 font-light">Meet supporters of Anime World Indonesia</h2>
+  <h1 class="uppercase font-bold text-4xl">Staff</h1>
+  <h2 class="text-xl mt-2 font-light">Get to Know the Awesome Staff of Anime World Indonesia</h2>
   <div class="h-[1.5rem]"></div>
 </div>
 
@@ -27,18 +27,18 @@
       <Loader className=""/>
     {:else}
       <div class="flex flex-col gap-y-14">
-        {#each membershipData.members as memberRole, i}
+        {#each membershipData.staff as staff, i}
           <div>
-            <div class="flex items-center justify-center gap-x-2" style="color: {memberRole.color};">
-              <h1 class="font-semibold text-lg whitespace-nowrap">{memberRole.title}</h1>
-              {#if memberRole.icon !== ""}
-                <img src="{memberRole.icon}" width="24px" height="24px" alt="Role Icon">
+            <div class="flex items-center justify-center gap-x-2" style="color: {staff.color};">
+              <h1 class="font-semibold text-lg whitespace-nowrap">{staff.title}</h1>
+              {#if staff.icon !== ""}
+                <img src="{staff.icon}" width="24px" height="24px" alt="Role Icon">
               {/if}
-              <div class="h-[1.6px] w-full" style="background-color: {memberRole.color}; "></div>
+              <div class="h-[1.6px] w-full" style="background-color: {staff.color}; "></div>
             </div>
             <div class="h-[2rem]"></div>
             <div class="flex flex-wrap gap-5 gap-x-10 items-center justify-center">
-              {#each memberRole.members as member}
+              {#each staff.members as member}
                 {#if !membershipData.staff.slice(0, i).some(x => x.members.some(y => y.id === member.id))}
                 <div class="flex flex-col gap-y-4 font-bold text-lg justify-center items-center">
                   <img

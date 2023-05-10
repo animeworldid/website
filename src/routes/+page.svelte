@@ -4,7 +4,6 @@
   import { faUsers, faFire, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons'
   import type { CardData } from '$src/lib/components/card'
   import type { CarouselData } from '$src/lib/components/carousel'
-  import type { AnimeData } from '$src/routes/page'
   import Button from '$src/lib/components/Button.svelte'
   import Carousel from '$src/lib/components/Carousel.svelte'
   import Card from '$src/lib/components/Card.svelte'

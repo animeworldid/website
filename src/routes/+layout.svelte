@@ -10,12 +10,11 @@
     const clientHeight = (el.target as Document).scrollingElement?.clientHeight ?? 0
     $isScrolled = scrollTop > 100
     $scrollOffset = scrollHeight - clientHeight - scrollTop
-    console.log($isScrolled)
   }
 </script>
 
 <svelte:window on:scroll={scrollDetect} />
-<div class="w-screen max-w-full overflow-x-hidden overflow-y-auto">
+<div class="w-screen max-w-full overflow-x-hidden overflow-y-auto bg-[#f9f9f9]">
   <Header />
   <main>
     <slot />
