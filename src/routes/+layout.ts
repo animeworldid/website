@@ -3,5 +3,5 @@
  * server-side rendering
  */
 export const ssr = true
-export const prerender = false
+export const prerender = true
 export const trailingSlash = 'always'
