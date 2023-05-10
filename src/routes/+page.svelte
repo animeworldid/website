@@ -1,12 +1,12 @@
 <script lang="ts">
   import Fa from 'svelte-fa'
-  import { faBilibili } from '@fortawesome/free-brands-svg-icons'
   import { faUsers, faFire, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons'
   import type { CardData } from '$src/lib/components/card'
   import type { CarouselData } from '$src/lib/components/carousel'
   import Button from '$src/lib/components/Button.svelte'
   import Carousel from '$src/lib/components/Carousel.svelte'
   import Card from '$src/lib/components/Card.svelte'
+  import AnchorButton from '$src/lib/components/AnchorButton.svelte'
 
   const data: AnimeData[] = [
     {
@@ -112,19 +112,13 @@
           <span>Server Boost</span>
         </span>
       </div>
-      <div class="z-10 font-bold">
-        <p>Our partner</p>
-        <span class="flex items-center text-[#3996e8] gap-2">
-          <Fa icon={faBilibili} />
-          <span>Bilibili.tv</span>
-        </span>
-      </div>
       <div class="z-10 grid grid-cols-1 lg:grid-cols-2 h-32 lg:h-12 mt-4 gap-4">
-        <Button
+        <AnchorButton
+          href="/redirect/discord"
           className="w-64 sm:w-72 max-w-full text-lg border-white sm:border-transparent box-border border-2"
           backgroundColor="bg-blue-600 sm:bg-[#f8c26d]"
           textColor="text-white"
-          shadowColor="hover:shadow-[#f8c26d] shadow-[#f8c26d]/20">Join Now <Fa class="pl-2" icon={faFire} /></Button
+          shadowColor="hover:shadow-[#f8c26d] shadow-[#f8c26d]/20">Join Now <Fa class="pl-2" icon={faFire} /></AnchorButton
         >
         <Button
           className="w-64 sm:w-72 max-w-full text-lg border-blue-600 sm:border-[#f8c26d] box-border border-2"
