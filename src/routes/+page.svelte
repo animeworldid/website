@@ -7,6 +7,8 @@
   import Carousel from '$src/lib/components/Carousel.svelte'
   import Card from '$src/lib/components/Card.svelte'
   import AnchorButton from '$src/lib/components/AnchorButton.svelte'
+  import type { AnimeData, StatsAPIResponse } from './+page'
+  import { onMount } from 'svelte'
 
   const data: AnimeData[] = [
     {
@@ -86,6 +88,11 @@
   const cardData: CardData[] = data.map((item) => {
     return { image: item.image, title: item.title, description: item.description, tags: item.tags }
   })
+
+  let statsData: StatsAPIResponse | undefined
+  onMount(async () => {
+    statsData = (await fetch('https://api.animeworld.moe/v1/stats').then((x) => x.json())).data
+  })
 </script>
 
 <div class="bg-blue-600 pt-16 sm:py-24 lg:py-32">
@@ -104,11 +111,25 @@
       <div class="z-10 font-bold">
         Currently our Discord community has
         <span class="flex items-center gap-2">
-          <span class="flex items-center text-[#fcda8a] gap-2"><Fa icon={faUsers} />99.999</span>
+          <span class="flex items-center text-[#fcda8a] gap-2"
+            ><Fa icon={faUsers} />
+            {#if !statsData?.memberCount}
+              <div class="h-3 w-16 animate-pulse bg-slate-300 rounded-full" />
+            {:else}
+              {statsData.memberCount.toLocaleString()}
+            {/if}
+          </span>
           <span>Members</span>
         </span>
         <span class="flex items-center gap-2">
-          <span class="flex items-center text-[#ff73fa] gap-2"><Fa icon={faUsers} />Level 3</span>
+          <span class="flex items-center text-[#ff73fa] gap-2"
+            ><Fa icon={faUsers} />
+            {#if !statsData?.memberCount}
+              <div class="h-3 w-16 animate-pulse bg-slate-300 rounded-full" />
+            {:else}
+              Level {statsData.boostLevel.toLocaleString()}
+            {/if}
+          </span>
           <span>Server Boost</span>
         </span>
       </div>

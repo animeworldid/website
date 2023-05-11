@@ -1,4 +1,4 @@
-interface AnimeData {
+export interface AnimeData {
   title: string
   description: string
   image: string
@@ -7,4 +7,9 @@ interface AnimeData {
   rating?: number
   tags?: string[]
   link?: string
+}
+
+export interface StatsAPIResponse {
+  memberCount: number
+  boostLevel: number
 }
