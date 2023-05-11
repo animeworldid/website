@@ -9,6 +9,8 @@
   import AnchorButton from '$src/lib/components/AnchorButton.svelte'
   import type { AnimeData, StatsAPIResponse } from './+page'
   import { onMount } from 'svelte'
+  import { PUBLIC_API_ENDPOINT } from '$env/static/public'
+  import Meta from '$src/lib/components/Meta.svelte'
 
   const data: AnimeData[] = [
     {
@@ -91,10 +93,11 @@
 
   let statsData: StatsAPIResponse | undefined
   onMount(async () => {
-    statsData = (await fetch('https://api.animeworld.moe/v1/stats').then((x) => x.json())).data
+    statsData = (await fetch(new URL(`${PUBLIC_API_ENDPOINT}/stats`)).then((x) => x.json())).data
   })
 </script>
 
+<Meta description="Bergabunglah dengan Discord komunitas anime terbesar di Indonesia!" />
 <div class="bg-blue-600 pt-16 sm:py-24 lg:py-32">
   <div class="container max-w-6xl relative mx-auto bg-blue-600 sm:bg-white rounded-lg">
     <img class="z-10 absolute max-h-full w-auto bottom-0 right-0" alt="" src="/assets/matsuri-crop.png" />
@@ -113,7 +116,7 @@
         <span class="flex items-center gap-2">
           <span class="flex items-center text-[#fcda8a] gap-2"
             ><Fa icon={faUsers} />
-            {#if !statsData?.memberCount}
+            {#if !statsData}
               <div class="h-3 w-16 animate-pulse bg-slate-300 rounded-full" />
             {:else}
               {statsData.memberCount.toLocaleString()}
@@ -124,7 +127,7 @@
         <span class="flex items-center gap-2">
           <span class="flex items-center text-[#ff73fa] gap-2"
             ><Fa icon={faUsers} />
-            {#if !statsData?.memberCount}
+            {#if !statsData}
               <div class="h-3 w-16 animate-pulse bg-slate-300 rounded-full" />
             {:else}
               Level {statsData.boostLevel.toLocaleString()}

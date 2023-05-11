@@ -2,13 +2,16 @@
   import Loader from '$src/lib/components/Loader.svelte'
   import { onMount } from 'svelte'
   import type { MembershipAPIResponse } from './+page'
+  import { PUBLIC_API_ENDPOINT } from '$env/static/public'
+  import Meta from '$src/lib/components/Meta.svelte'
 
   let membershipData: MembershipAPIResponse | undefined
   onMount(async () => {
-    membershipData = (await fetch('https://api.animeworld.moe/v1/membership').then((x) => x.json())).data
+    membershipData = (await fetch(new URL(`${PUBLIC_API_ENDPOINT}/membership`)).then((x) => x.json())).data
   })
 </script>
 
+<Meta title="Staff" />
 <div class="bg-blue-600 pt-16 sm:pt-24 lg:pt-32 text-white text-center flex flex-col justify-between items-center">
   <div class="h-[2rem]" />
   <h1 class="uppercase font-bold text-4xl">Staff</h1>
