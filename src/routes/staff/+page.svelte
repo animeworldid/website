@@ -23,7 +23,7 @@
 <div class="container max-w-6xl px-3 lg:px-0 md:mx-auto">
   <section>
     {#if membershipData === undefined}
-      <Loader className="" />
+      <Loader />
     {:else}
       <div class="flex flex-col gap-y-14">
         {#each membershipData.staff as staff, i}

@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let className: string
+  export let className = ''
 </script>
 
 <div class="text-theme grid gap-4 py-12 {className}">
