@@ -2,7 +2,7 @@
   import { assets } from '$app/paths'
   export let name = 'Anime World Indonesia'
   export let title = 'Home'
-  export let description = 'Mind writing some?'
+  export let description = 'Anime World Indonesia is the largest anime lovers community in Indonesia based on the social media platform Discord. We offer a variety of anime-related services and activities, including anime discussions, trivia, fan art, etc. '
   export let image = `${assets}/assets/banner.jpg`
   export let color = '#ff0000'
 </script>
