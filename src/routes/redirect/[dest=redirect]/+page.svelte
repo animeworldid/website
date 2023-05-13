@@ -2,6 +2,7 @@
   import Loader from '$src/lib/components/Loader.svelte'
   import { onMount } from 'svelte'
   import type { PageData } from './$types'
+  import Meta from '$src/lib/components/Meta.svelte'
 
   export let data: PageData
 
@@ -12,6 +13,7 @@
   })
 </script>
 
+<Meta title="Redirecting..." />
 <div class="bg-blue-600 pt-16 sm:pt-24 lg:pt-32 text-white text-center flex flex-col justify-between items-center">
   <div class="h-[2rem]" />
   <h1 class="uppercase font-bold text-4xl">Redirecting You</h1>
