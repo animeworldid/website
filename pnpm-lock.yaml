@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@fortawesome/free-brands-svg-icons':
@@ -16,8 +20,8 @@ dependencies:
 
 devDependencies:
   '@fontsource/fira-mono':
-    specifier: ^4.5.10
-    version: 4.5.10
+    specifier: ^5.0.3
+    version: 5.0.3
   '@neoconfetti/svelte':
     specifier: ^1.0.0
     version: 1.0.0
@@ -271,8 +275,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fontsource/fira-mono@4.5.10:
-    resolution: {integrity: sha512-bxUnRP8xptGRo8YXeY073DSpfK74XpSb0ZyRNpHV9WvLnJ7TwPOjZll8hTMin7zLC6iOp59pDZ8EQDj1gzgAQQ==}
+  /@fontsource/fira-mono@5.0.3:
+    resolution: {integrity: sha512-AN08SykeaFazTC0d0HHOZeQ3jmHyn2Qs5bGEjhxuNp9NjUqg9rL8x+LxrXWdVIo8PBg0xbnkcA3KR6RVvQeRAg==}
     dev: true
 
   /@fortawesome/fontawesome-common-types@6.4.0:
