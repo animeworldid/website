@@ -41,7 +41,7 @@
             <div class="h-[2rem]" />
             <div class="flex flex-wrap gap-5 gap-x-10 items-center justify-center">
               {#each (memberRole.members ?? []) as member}
-                {#if !membershipData.staff?.slice(0, i).some((x) => x.members.some((y) => y.id === member.id))}
+                {#if !membershipData.staffs?.slice(0, i).some((x) => x.members.some((y) => y.id === member.id))}
                   <div class="flex flex-col gap-y-4 font-bold text-lg justify-center items-center">
                     <img
                       style="border-color: {member.color};"

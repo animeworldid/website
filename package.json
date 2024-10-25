@@ -38,5 +38,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@sveltejs/adapter-static": "^2.0.2",
     "svelte-fa": "^3.0.4"
-  }
+  },
+  "packageManager": "pnpm@8.7.1+sha512.41bb77121614697152da4e052d003baf6fde633fc9a03786ebcd3fdd45c6d066b4dcb3ee6381a076f08b7beccedcced99d61b8548e1b03093b4292727ebe5ea8"
 }
