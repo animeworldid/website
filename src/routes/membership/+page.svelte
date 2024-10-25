@@ -29,19 +29,19 @@
       <Loader />
     {:else}
       <div class="flex flex-col gap-y-14">
-        {#each membershipData.members as memberRole, i}
+        {#each (membershipData.members ?? []) as memberRole, i}
           <div>
             <div class="flex items-center justify-center gap-x-2" style="color: {memberRole.color};">
               <h1 class="font-semibold text-lg whitespace-nowrap">{memberRole.title}</h1>
-              {#if memberRole.icon !== ''}
+              {#if memberRole.icon}
                 <img src={memberRole.icon} width="24px" height="24px" alt="Role Icon" />
               {/if}
               <div class="h-[1.6px] w-full" style="background-color: {memberRole.color}; " />
             </div>
             <div class="h-[2rem]" />
             <div class="flex flex-wrap gap-5 gap-x-10 items-center justify-center">
-              {#each memberRole.members as member}
-                {#if !membershipData.staff.slice(0, i).some((x) => x.members.some((y) => y.id === member.id))}
+              {#each (memberRole.members ?? []) as member}
+                {#if !membershipData.staff?.slice(0, i).some((x) => x.members.some((y) => y.id === member.id))}
                   <div class="flex flex-col gap-y-4 font-bold text-lg justify-center items-center">
                     <img
                       style="border-color: {member.color};"
@@ -51,7 +51,7 @@
                       height="125px"
                       width="125px"
                     />
-                    <h1>{member.username}#{member.discriminator}</h1>
+                    <h1>{member.username}</h1>
                   </div>
                 {/if}
               {/each}
