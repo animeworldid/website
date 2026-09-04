@@ -11,14 +11,14 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "devDependencies": {
-    "@fontsource/fira-mono": "^5.0.3",
+    "@fontsource/fira-mono": "^5.3.0",
     "@neoconfetti/svelte": "^1.0.0",
-    "@sveltejs/adapter-auto": "^2.1.0",
+    "@sveltejs/adapter-auto": "^2.1.1",
     "@sveltejs/kit": "^1.20.5",
-    "@types/cookie": "^0.5.1",
+    "@types/cookie": "^0.6.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.5.5",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-svelte3": "^4.0.0",
@@ -26,18 +26,18 @@
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
     "svelte": "^3.59.2",
-    "svelte-check": "^3.4.4",
-    "tailwindcss": "^3.3.2",
-    "tslib": "^2.5.3",
+    "svelte-check": "^3.8.6",
+    "tailwindcss": "^3.4.19",
+    "tslib": "^2.8.1",
     "typescript": "^5.7.3",
     "vite": "^4.3.9"
   },
   "type": "module",
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@sveltejs/adapter-static": "^2.0.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@sveltejs/adapter-static": "^2.0.3",
     "svelte-fa": "^3.0.4"
   },
-  "packageManager": "pnpm@8.7.1+sha512.41bb77121614697152da4e052d003baf6fde633fc9a03786ebcd3fdd45c6d066b4dcb3ee6381a076f08b7beccedcced99d61b8548e1b03093b4292727ebe5ea8"
+  "packageManager": "pnpm@8.15.9"
 }
